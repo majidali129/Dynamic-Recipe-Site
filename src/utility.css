@@ -1,0 +1,35 @@
+.common-btn{
+    display: block;
+    font-size: 1.3rem;
+    padding: 0.2em 1.2em;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.login-btn{
+    background-color:#a6ce39;
+};
+
+.register-btn{
+    background-color: #3ece7e ;
+}
+
+
+.banner-heading{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.03em;
+}
+.banner-para-text{
+    font-size: 1.9rem;
+    color: #ffffffcb;
+
+    /* font-weight: 500; */
+}
+
