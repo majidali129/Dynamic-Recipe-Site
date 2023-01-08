@@ -165,6 +165,44 @@ textarea{
 **/
 
 .search-container{
+    padding: 2em 1em;
+    background-color: #fff;
+    /* border: 2px solid green; */
+    position: relative;
+}
+.search-btns-container{
+    /* border: 1px solid red; */
+    display: inline-block;
+    width: 290px;
     position: absolute;
-    bottom: 0;
+    top: -45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.search-btns-container> .restourant , .recipes{
+    font-size: 1.4rem;
+    padding: 0.8em 1.8em;
+    background-color: #fff;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+
+.search-field-section{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 1.5em 0em;
+}
+.search-field-section> .restourant-field,.city-field,.city-restourant-search-btn{
+    width: 250px;
+    padding: 0.8em 0.3em;
+    font-size: 1.8rem;
+    border: none;
+    border-bottom: 1px solid #8080808e;
+    outline: none;
 }

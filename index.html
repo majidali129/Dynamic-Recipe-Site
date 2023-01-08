@@ -55,28 +55,32 @@
 
         </section>
 
-        <section class="search-container container" id="search-container"> 
-            <div class="btn-container">
-                <button class="restourant"><i class="fa-solid fa-fork-knife"></i> Restourants</button>
-                <button class="Recipes">
-                    Recipes
-                </button>
-            </div>
-
-            <div class="search-field-section">
-                <div class="restourant" id="restourant"> <input type="text" placeholder="Find a restourant">
-                </div>
-
-                <div class="city" id="city">
-                <input type="text"> 
-                </div>
-                <button class="btn search-btn" id="city-restourant-search-btn"> 
-                    <i class="bi bi-search " id="search-btn"></i> 
-                        Search
-                </button>
-                </div>
-        </section>
+        
     </header>
+
+    <section class="search-container container " id="search-container"> 
+        <div class="search-btns-container">
+
+            <button class="restourant">
+                <i class="fa-light fa-fork-knife"></i> Restourants</button>
+            <button class="recipes">
+                <i class="fa-light fa-spoon"></i>
+                Recipes
+            </button>
+
+        </div>
+
+        <div class="search-field-section">
+                <input type="text" class="restourant-field" id="restourant-field" placeholder="Find a restourant">
+
+            <input class="city-field" id="city-field" type="text" placeholder="Your Desired City..."> 
+
+            <button class="btn city-restourant-search-btn" id="city-restourant-search-btn"> 
+            <i class="bi bi-search " ></i> 
+                    Search Now
+            </button>
+            </div>
+    </section>
 
 
     <script src="https://kit.fontawesome.com/42c4787602.js" crossorigin="anonymous"></script>    <!--fontawesome kit-->
