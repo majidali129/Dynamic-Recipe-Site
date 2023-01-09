@@ -175,7 +175,7 @@ textarea{
     display: inline-block;
     width: 290px;
     position: absolute;
-    top: -45px;
+    top: -43px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -185,7 +185,7 @@ textarea{
     font-size: 1.4rem;
     padding: 0.8em 1.8em;
     background-color: #fff;
-    border-radius: 3px;
+    border-radius: 3px 3px 0px 0px;
     border: none;
     outline: none;
 }
@@ -195,12 +195,12 @@ textarea{
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 1.5em 0em;
 }
 .search-field-section> .restourant-field,.city-field,.city-restourant-search-btn{
     width: 250px;
-    padding: 0.8em 0.3em;
+    padding: 0.6em 0.3em;
     font-size: 1.8rem;
     border: none;
     border-bottom: 1px solid #8080808e;
