@@ -9,11 +9,16 @@
     outline: none;
     border: none;
     cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
+}
+.common-btn:hover{
+    opacity: 0.8;
 }
 
 .login-btn{
     background-color:#a6ce39;
-};
+}
 
 .register-btn{
     background-color: #3ece7e ;
@@ -26,6 +31,7 @@
     color: #fff;
     letter-spacing: 0.03em;
 }
+
 .banner-para-text{
     font-size: 1.9rem;
     color: #ffffffcb;
@@ -43,4 +49,55 @@
     /* gap: 10px; */
     cursor: pointer;
     border: none;
+    transition: all 0.2s ease-in-out;
+}
+.city-restourant-search-btn:hover{
+    opacity: 0.9;
+}
+
+
+/* Publicity section */
+
+.publicity-main-heading{
+    color:#452433 ;
+    font-size: 3rem;
+    letter-spacing: 0.02em;
+    font-weight: 900;
+}
+.publicity-main-heading::selection{
+    background-color: #452433;
+    color: #fff;
+}
+
+.secondary-heading{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #452433;
+    transition: all 0.2s ease-in-out;
+}
+.secondary-heading::selection{
+    background-color: #452433;
+    color: #fff;
+}
+.secondary-heading:hover{
+    color:#a6ce39;
+}
+.secondary-para{
+    letter-spacing: 0.03em;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #452433b5;
+}
+.secondary-para::selection{
+    background-color: #452433;
+    color: #fff;
+}
+
+.publicity-secondary-heading{
+    font-size: 2rem;
+    letter-spacing: 0.02em;
+}
+.publicity-secondary-heading::selection{
+    background-color: #452433;
+    color: #fff;
 }

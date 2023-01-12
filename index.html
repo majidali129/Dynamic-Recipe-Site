@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/42c4787602.js" crossorigin="anonymous" ></script>    <!--fontawesome kit-->
     <title>Pakistan's Largest platform For Foodies</title>
     <link rel="stylesheet" href="/src/bootstrap.min.css">
     <link rel="stylesheet" href="/src/bootstrap.min.js">
     <link rel="stylesheet" href="/src/utility.css">
     <link rel="stylesheet" href="/src/style.css">
+    <script src="/src/data.js" defer></script>
     <script src="/src/main.js" defer></script>
 </head>
 <body>
@@ -37,11 +39,11 @@
 
             <div class="btns">
                 <div class="btn-container">
-                     <span class="login-btn common-btn">  <span class="login-icon">I</span> Login</span>
+                     <span class="login-btn common-btn">Login</span>
                 </div>
 
                 <div class="btn-container">
-                    <span class="register-btn common-btn">  <span class="register-icon">I</span> Register</span> 
+                    <span class="register-btn common-btn"> Register</span> 
                 </div>
 
             </div>
@@ -58,31 +60,80 @@
         
     </header>
 
+    <!-- /**
+    *!  search section 
+    **/ -->
+
     <section class="search-container container " id="search-container"> 
         <div class="search-btns-container">
-
-            <button class="restourant">
-                <i class="fa-light fa-fork-knife"></i> Restourants</button>
-            <button class="recipes">
-                <i class="fa-light fa-spoon"></i>
-                Recipes
-            </button>
-
+            <button class="restourant">Restourants</button>
+            <button class="recipes">Recipes</button>
         </div>
 
         <div class="search-field-section">
-                <input type="text" class="restourant-field" id="restourant-field" placeholder="Find a restourant">
-                <input class="city-field" id="city-field" type="text" placeholder="Your Desired City..."> 
+                <span class="rest-field-container">
+                    <input type="text" class="restourant-field" id="restourant-field" placeholder="Find a restourant">
+                </span>
+
+                <span class="city-field-container">
+                    <input type="text" class="city-field" id="city-field" placeholder="Your city">
+                    <select name="city-names" class="city-names" id="city-names">
+                        <option class="city-name" value="Lahore">Lahore</option>
+                        <option class="city-name" value="Multan">Multan</option>
+                        <option class="city-name" value="Karachi">Karachi</option>
+                        <option class="city-name" value="Bahawalpur">Bahawalpur</option>
+                        <option class="city-name" value="Islamabad">Islamabad</option>
+                        <option class="city-name" value="Rawalpindi">Rawalpindi</option>
+                        <option class="city-name" value="Gujranwala">Gujranwala</option>
+                        <option class="city-name" value="Fasalabad">Fasalabad</option>
+                        <option class="city-name" value="Pashawar">Pashawar</option>
+                        <option class="city-name" value="Sahiwal">Sahiwal</option>
+                        <option class="city-name" value="Quetta">Quetta</option>
+                        <option class="city-name" value="Bhera">Bhera</option>
+                        <option class="city-name" value="Sakkar">Sakkar</option>
+                        <option class="city-name" value="Sialkot">Sialkot</option>
+                        <option class="city-name" value="Wah Cantt">Wah Cantt</option>
+                        <option class="city-name" value="Dera Ghazi Khan">Dera Ghazi Khan</option>
+                        <option class="city-name" value="Gujrat">Gujrat</option>
+                        <option class="city-name" value="Jhelum">Jhelum</option>
+                        <option class="city-name" value="Abbottabad">Abbottabad</option>
+                        <option class="city-name" value="Swat">Swat</option>
+                        <option class="city-name" value="Naran">Naran</option>
+                        <option class="city-name" value="Okara">Okara</option>
+                        <option class="city-name" value="Mardan">Mardan</option>
+                        <option class="city-name" value="Murree">Murree</option>
+                        <option class="city-name" value="Kalam">Kalam</option>
+                    </select>
+                </span>
 
             <span class=" city-restourant-search-btn" id="city-restourant-search-btn"> 
             <i class="bi bi-search " ></i> 
                     Search Now
+                    <img src="" alt="">
             </span>
             </div>
     </section>
 
 
-    <script src="https://kit.fontawesome.com/42c4787602.js" crossorigin="anonymous"></script>    <!--fontawesome kit-->
+
+    <!-- 
+        /**
+        *! Publicity section
+        **/
+     -->
+
+     <section class="rest-recipe-event-publicity-section container" id="rest-recipe-event-publicity-section">
+
+        <h4 class="publicity-secondary-heading text-danger text-center">Foodies Guide</h4>
+        <h1 class="publicity-main-heading color-dark-blue text-center">Discover the scrumptious world of food</h1><br><br><br><br>
+
+        <div class="publicity-container container"
+         id="publicity-container">
+        </div>
+     </section>
+
+
+    
 </body>
 </html>
 
