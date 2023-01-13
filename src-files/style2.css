@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+/* #452433 cyan */
+/* ##050506 black */
+/* #FF861B orange*/
+/* #2F11D9 blue */
+/* #F31702 red */
+/* #56F569 darkgreen */
+
+
+
+
+/**
+*! css reset
+**/
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+input,
+textarea{
+    outline: none;
+}
+
+/**
+*!  Cities Section 
+**/
+
+.cities-section-wrapper{
+    /* border: 2px solid green; */
+    padding: 1.8em 0em;
+    z-index: 100;
+}
+.cities-section-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+.city-image-wrapper{
+    /* border: 2px solid rgba(0, 0, 0, 0.446); */
+    width: 200px;
+    height: 280px;
+    border-radius: 3px;
+    /* margin-bottom: 1em; */
+}
+.city-image-wrapper>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: inherit;
+}

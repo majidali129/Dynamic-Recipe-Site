@@ -1,4 +1,6 @@
-let publication = ()=>{
+
+// Publicity section
+( ()=>{
     return( 
         document.getElementById('publicity-container').innerHTML =  rest_recipe_event_details.map((x)=>{
             let {title , image , details } = x
@@ -8,9 +10,9 @@ let publication = ()=>{
             <div class="element-details details">
             <div class="img-overlay-container">
             <a href="https://www.google.com" target="blank"><img  src=${image} alt=""></a>
-            <div class="img-overlay-content-box">
-             <i class="fa-light fa-angle-right"></i>  >
-              </div>
+            <div class="img-overlay-content-box" >
+            <i class="fa-solid fa-angle-right"></i>              
+            </div>
             </div>
             <div>
             <div > <a href="#" class="secondary-heading">${title}</a> </div>
@@ -26,4 +28,24 @@ let publication = ()=>{
     })
     )
 }
-publication()
+)()
+
+// Cities Section 
+
+const citiesSection = document.getElementById('cities-section-container');
+
+function citiesDataDisplayer(){
+    
+            citiesSection.innerHTML = cities_collection.map((city)=>{
+                const {name , image} = city
+                return(
+            `
+            <figure class="city-image-wrapper">
+            <img src=${image}>
+            </figure>
+            `
+        )
+        // return ([name , image])
+    })
+}
+citiesDataDisplayer()
