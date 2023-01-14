@@ -3,7 +3,7 @@
 ( ()=>{
     return( 
         document.getElementById('publicity-container').innerHTML =  rest_recipe_event_details.map((x)=>{
-            let {title , image , details } = x
+            let {source , title , image , details} = x
         return(
             `
             <div class="rest-recipe-event-container">

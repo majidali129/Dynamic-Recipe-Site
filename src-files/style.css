@@ -252,7 +252,7 @@ option{
     
 }
 .element-details{
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     width: 350px;
     display: flex;
     flex-direction: column;
@@ -260,7 +260,7 @@ option{
     gap: 10px;
 }
 .img-overlay-wrapper{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     position: relative;
     cursor: pointer;
     width: 100%;
