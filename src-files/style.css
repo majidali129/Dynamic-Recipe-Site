@@ -252,17 +252,18 @@ option{
     
 }
 .element-details{
-    /* border: 2px solid red; */
+    border: 2px solid orange;
     width: 350px;
     display: flex;
     flex-direction: column;
     text-align: left;
     gap: 10px;
 }
-.img-overlay-container{
-    /* border: 2px solid red; */
+.img-overlay-wrapper{
+    border: 2px solid red;
     position: relative;
     cursor: pointer;
+    width: 100%;
 }
 
 .img-overlay-content-box{
@@ -280,13 +281,13 @@ option{
     z-index: 0;
 }
 
-.img-overlay-container:hover .img-overlay-content-box{
+.img-overlay-wrapper:hover .img-overlay-content-box{
     opacity: 100;
     z-index: 10;
     border-radius: 4px;
 }
 
-.img-overlay-container::after{
+.img-overlay-wrapper>.image-overlay-container::after{
     /* display: block; */
     content: "";
     /* border: 1px solid blue; */
@@ -299,11 +300,11 @@ option{
     transition: all 0.5s ease-in-out;
     opacity: 0;
 }
-.img-overlay-container:hover::after{
+.img-overlay-wrapper:hover>.image-overlay-container::after{
     z-index: 5;
     opacity: 50;
 }
-.element-details>.img-overlay-container>a>img{
+.image-overlay-container>img{
     width: 100%;
 }
 

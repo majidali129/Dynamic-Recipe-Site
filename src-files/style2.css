@@ -8,8 +8,6 @@
 /* #56F569 darkgreen */
 
 
-
-
 /**
 *! css reset
 **/
@@ -61,12 +59,67 @@ textarea{
     width: 200px;
     height: 280px;
     border-radius: 3px;
+    overflow: hidden;
     /* margin-bottom: 1em; */
+    position: relative;
 }
-.city-image-wrapper>img{
+.city-image-wrapper>  .city-image-overlay-container:after{
+    position: absolute;
+    content: "";
+    /* border: 1px solid red; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.326);
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    z-index: 0;
+}
+.city-image-wrapper:hover>.city-image-overlay-container:after{
+    opacity: 100;
+    z-index: 50;
+}
+
+.city-image-wrapper>.city-image-overlay-container>img{
     display: block;
     width: 100%;
     height: 100%;
     object-fit:cover;
     border-radius: inherit;
+    transition: 0.2s ease-in;
 }
+
+.city-image-overlay-content-box{
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    /* border: 2px solid red; */
+    padding: 0.5em 1em;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    z-index: 50;
+}
+.city-image-wrapper:hover .city-image-overlay-content-box{
+bottom: 10px;
+z-index: 100;
+}
+.city-image-wrapper:hover a>img{
+    transform: scale(1.05)
+}
+.city-image-overlay-content-box>h2{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+.city-image-overlay-content-box> a>.city-explore-btn{
+    font-size: 1.8rem;
+    color: #fff;
+}
+
